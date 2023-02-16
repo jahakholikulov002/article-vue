@@ -58,6 +58,8 @@ export default {
         font-weight: 500;
         font-family: 'Montserrat';
         transition: all .2s ease;
+        line-height: 19px;
+        letter-spacing: 5%;
     }
     li:hover{
         transform: scale(1.01);
