@@ -1,14 +1,10 @@
 <template>
-    <div class="box">
+    <div class="box" v-for="(value, key) in magazine" :key="key">
         <img src="@/assets/images/magazine.jpg" alt="@/assets/images/magazine.jpg">
-        <div class="info">
-            <div class="title">Urban Agriculture Magazine #38: <br> 20+ years of RUAF</div>
-            <div class="desctiption">The new issue of the Urban Agriculture Magazine analyses five key work areas for the
-                coming decade: Resilience, Social inclusion, Urban and Peri-urban Agriculture, Urban Planning, and
-                Governance. Resilience Food systems around the globe are highly vulnerable to the impacts of multiple
-                hazards, including climate shocks, natural events, global warming, and political instability. People, assets
-                […]</div>
-            <div class="type"> Jurnal turi: PDF</div>
+        <div class="info " >
+            <div class="title">{{value.title}}<br> {{value.titleYear}}</div>
+            <div class="desctiption"> {{value.description}}</div>
+            <div class="type"> Jurnal turi: {{value.type}}</div>
             <div class="download"> <span> <i class="fa-solid fa-file-arrow-down"></i>Faylni yuklash</span> </div>
             <div class="more"> <span>
                     Batafsil ma'lumot uchun...
@@ -21,16 +17,36 @@ export default {
     name: "Box",
     data() {
         return {
-            
-        }
-    },
+            magazine: [
+                {
+                    title: "Urban Agriculture Magazine #38:",
+                    titleYear: "20+ years of RUAF",
+                    description: "The new issue of the Urban Agriculture Magazine analyses five key work areas for the coming decade: Resilience, Social inclusion, Urban and Peri- urban Agriculture, Urban Planning, and Governance.Resilience Food systems around the globe are highly vulnerable to the impacts of multiple hazards, including climate shocks, natural events, global warming, and political instability.People, assets […]" ,       
+                    type: "PDF",
+               },
+                {
+                    title: "Urban Agriculture Magazine #38:",
+                    titleYear: "20+ years of RUAF",
+                    description: "The new issue of the Urban Agriculture Magazine analyses five key work areas for the coming decade: Resilience, Social inclusion, Urban and Peri- urban Agriculture, Urban Planning, and Governance.Resilience Food systems around the globe are highly vulnerable to the impacts of multiple hazards, including climate shocks, natural events, global warming, and political instability.People, assets […]" ,       
+                    type: "PDF",
+               },
+                {
+                    title: "Urban Agriculture Magazine #38:",
+                    titleYear: "20+ years of RUAF",
+                    description: "The new issue of the Urban Agriculture Magazine analyses five key work areas for the coming decade: Resilience, Social inclusion, Urban and Peri- urban Agriculture, Urban Planning, and Governance.Resilience Food systems around the globe are highly vulnerable to the impacts of multiple hazards, including climate shocks, natural events, global warming, and political instability.People, assets […]" ,       
+                    type: "PDF",
+               },
+            ]
+
+    }
+},
 }
 </script>
 <style scoped>
 .box {
     /* position: absolute; */
     /* width: 1000px; */
-    margin: 0;
+    margin: 2rem 0;
     padding: 0;
     /* height: 270px; */
     border: 1px solid #34333393;
@@ -38,6 +54,9 @@ export default {
     justify-content: space-between;
     flex-direction: row;
 
+}
+.box:first-child{
+    margin: 0!important;
 }
 
 img {
@@ -141,12 +160,13 @@ span {
     margin: 0;
     padding: 0;
     margin-top: 10px;
-    
+
 }
-.info .more span{
+
+.info .more span {
     cursor: pointer;
 }
-.info .more span:hover{
+
+.info .more span:hover {
     font-weight: 500;
-}
-</style>
+}</style>
