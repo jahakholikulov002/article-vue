@@ -1,5 +1,8 @@
 <template>
   <div class="search-bar">
+    <div class="main-section">
+
+    
     <div class="content">
       <div class="title">Jurnallar</div>
       <div class="content-text">Sizga barcha elektron jurnallarni topishda <br>
@@ -9,8 +12,8 @@
       <input type="text" placeholder="Jurnal qidirish...">
       <i class="fas fa-search"></i>
     </form>
-
-</div>
+  </div>
+  </div>
 </template>
 <script>
 export default {
@@ -24,16 +27,25 @@ export default {
   background-image: url(@/assets/images/map-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
 
 
 }
 
+.search-bar .main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-input {
-  position: absolute;
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
   border: 1px solid #ffffff3a;
   display: flex;
   flex-direction: row;
@@ -47,12 +59,13 @@ export default {
   background-color: #eee;
   border-radius: 10px;
   top: 21.5rem;
+
   /* left: ; */
 
 }
 
 input {
-  width: 400px;
+  width: 500px;
   border: none;
   outline: none;
   background: none;
@@ -73,24 +86,27 @@ i {
 i:hover {
   transform: scale(1.2);
 }
-.content{
+
+.content {
+  margin: 0;
+  padding: 0;
   /* position: absolute; */
-  margin-top: 80px;
+  margin-top: 80px !important;
   /* height: 100px; */
-  padding: 2rem;
+  padding: 2rem !important;
   position: relative;
 }
+
 .title {
-  
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
   /* identical to box height */
-text-align: center;
+  text-align: center;
   letter-spacing: 0.05em;
-
   color: #FFFFFF;
 }
 
@@ -104,7 +120,6 @@ text-align: center;
   line-height: 29px;
   text-align: center;
   letter-spacing: 0.05em;
-
   color: #FFFFFF;
 
 }</style>

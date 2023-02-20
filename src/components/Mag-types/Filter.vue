@@ -38,6 +38,7 @@ export default {
     justify-content: center;
     margin: 0;
     margin-left: 1rem ;
+    height: 300px;
 
 }
 
@@ -79,6 +80,7 @@ export default {
 }
 
 .category {
+    
     margin-top: 10px;
     width: 300px;
     
