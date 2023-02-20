@@ -17,7 +17,8 @@
 </template>
 <script>
 export default {
-    name: "Filter",
+ 
+    name: 'Filter',
     data() {
         return {
             // categories:[
@@ -29,16 +30,22 @@ export default {
 </script>
 <style>
 .left-filter {
-    width: 300px;
+    width: 400px;
     /* height: 700px; */
-    background: #775353;
+    /* background: #775353; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
+    margin-left: 1rem ;
+
 }
 
 .input {
-    width: 240px;
+    /* position: absolute; */
+
+    margin-top: 30px;
+    width: 300px;
     height: 38px;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -57,7 +64,7 @@ export default {
 
 
 .input input {
-    width: 200px;
+    width: 250px;
     height: 32px;
     border: none;
     outline: none;
@@ -73,7 +80,8 @@ export default {
 
 .category {
     margin-top: 10px;
-    width: 240px;
+    width: 300px;
+    
     /* border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px; */
     
@@ -96,6 +104,7 @@ export default {
     box-shadow: 0 5px 25px rgba(0,0,0,.1);
     transition: transform .5s;
     cursor: pointer;
+    height: 45px;
 }
 .category ul li:first-child{
     border-top-left-radius: 5px;
