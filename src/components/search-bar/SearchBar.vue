@@ -2,17 +2,17 @@
   <div class="search-bar">
     <div class="main-section">
 
-    
-    <div class="content">
-      <div class="title">Jurnallar</div>
-      <div class="content-text">Sizga barcha elektron jurnallarni topishda <br>
-        yordam beramiz! </div>
+
+      <div class="content">
+        <div class="title">Jurnallar</div>
+        <div class="content-text">Sizga barcha elektron jurnallarni topishda <br>
+          yordam beramiz! </div>
+      </div>
+      <form class="form-input">
+        <input type="text" placeholder="Jurnal qidirish...">
+        <i class="fas fa-search"></i>
+      </form>
     </div>
-    <form class="form-input">
-      <input type="text" placeholder="Jurnal qidirish...">
-      <i class="fas fa-search"></i>
-    </form>
-  </div>
   </div>
 </template>
 <script>
@@ -59,9 +59,23 @@ export default {
   background-color: #eee;
   border-radius: 10px;
   top: 21.5rem;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.347);
 
   /* left: ; */
 
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-input:active {
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.559);
+  /* -webkit-transform: scale(1.005); */
+  /* transform: scale(1.005); */
 }
 
 input {

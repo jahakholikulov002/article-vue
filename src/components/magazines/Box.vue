@@ -53,7 +53,11 @@ export default {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+   
 
+}
+.box:hover{
+     box-shadow: 0 0 20px rgba(69, 68, 68, 0.347);
 }
 .box:first-child{
     margin: 0!important;

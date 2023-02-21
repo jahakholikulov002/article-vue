@@ -7,6 +7,7 @@
       <Magazine></Magazine>
     </div>
     <HomeButton></HomeButton>
+    <Footer></Footer>
   </div>
 </template>
 <script>
@@ -15,6 +16,8 @@ import SearchBar from "@/components/search-bar/SearchBar.vue"
 import Filter from "@/components/Mag-types/Filter.vue"
 import Magazine from "@/components/magazines/Magazine.vue"
 import HomeButton from "@/components/buttons/HomeButton.vue"
+import Footer from "@/components/footer/Footer.vue"
+
 export default {
  
  components:{
@@ -23,6 +26,7 @@ export default {
   Filter,
   Magazine,
   HomeButton,
+  Footer,
  }
   
 }

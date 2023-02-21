@@ -41,8 +41,8 @@ button {
   button:hover, button:focus, button:active{
     
     box-shadow:0 0 20px rgba(0,0,0,0.5);
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
   }
   
 </style>
