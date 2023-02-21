@@ -74,6 +74,7 @@ input {
 
 }
 
+
 i {
   /* position: absolute; */
   color: black;

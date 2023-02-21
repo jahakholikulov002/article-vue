@@ -16,9 +16,10 @@
     </div>
 </template>
 <script>
+
 export default {
- 
-    name: 'Filter',
+ name: "Filter",
+    
     data() {
         return {
             // categories:[
