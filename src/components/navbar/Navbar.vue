@@ -4,11 +4,11 @@
             <span>Elektron <br> Jurnallar</span>
         </div>
         <ul class="nav">
-            <li>Bosh sahifa</li>
-            <li>Jurnallar</li>
-            <li>Jurnal haqida ma'lumot</li>
-            <li>Yangiliklar</li>
-            <li>Profilga kirish <i class="fa-solid fa-user"></i></li>
+            <li @click="$router.push('/')">Bosh sahifa</li>
+            <li @click="$router.push('/magazines')">Jurnallar</li>
+            <li @click="$router.push('/about')" >Jurnal haqida ma'lumot</li>
+            <li @click="$router.push('/news')" >Yangiliklar</li>
+            <li @click="$router.push('/login')" >Profilga kirish <i class="fa-solid fa-user"></i></li>
         </ul>
             
     
