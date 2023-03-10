@@ -7,17 +7,14 @@
 <script>
 import Navbar from "@/components/navbar/Navbar.vue"
 
-
 export default {
- 
- components:{
-  Navbar,
- 
- }
-  
+
+  components: {
+    Navbar,
+
+  },
+
+
 }
 </script>
-<style scoped> 
-  
-  
-</style>
+<style scoped></style>
