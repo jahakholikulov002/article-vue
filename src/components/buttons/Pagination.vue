@@ -87,7 +87,7 @@
     color:#949494;
   }
   li:hover{
-    background: #0072b4;
+    background: #0033b4;
     color: #fff;
   }
   li.active {

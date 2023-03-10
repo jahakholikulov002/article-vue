@@ -5,18 +5,19 @@
 
     </div>
     <Pagination :current-page="currentPage" :page-count="pageCount" :page-range="pageRange" @page-changed="changePage" />
-
+    <Footer class="footer"></Footer>
 </template>
 <script>
 import Filter from "@/components/Mag-types/Filter.vue"
 import Magazine from "@/components/magazines/Magazine.vue"
 import Pagination from "@/components/buttons/Pagination.vue"
-
+import Footer from "@/components/footer/Footer.vue" 
 export default {
     components: {
         Filter,
         Magazine,
-        Pagination
+        Pagination,
+        Footer
     },
     data() {
         return {
@@ -34,10 +35,14 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .main-content {
     display: flex;
     flex-direction: row;
 
 }
+.footer{
+    margin-top: 35px;
+}
+
 </style>
