@@ -1,13 +1,13 @@
 <template>
     <div class="pagination">
       <ul>
-        <li  @click="prevPage"> Prev </li>
+        <li  v-if="currentPage > 1"  @click="prevPage"> Prev </li>
         <li v-for="pageNumber in pages" :key="pageNumber"
             :class="{'active': pageNumber === currentPage}"
             @click="changePage(pageNumber)">
           {{ pageNumber }}
         </li>
-        <li @click="nextPage">Next</li>
+        <li v-if="currentPage < pageRange" @click="nextPage">Next</li>
       </ul>
     </div>
   </template>

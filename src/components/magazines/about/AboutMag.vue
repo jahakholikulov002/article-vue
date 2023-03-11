@@ -1,5 +1,7 @@
 <template>
-    <div>
+    <div class="about-mag">
+        <Box/>
+        <Box/>
         <Box/>
     </div>
 </template>
@@ -13,5 +15,9 @@ export default {
 }
 </script>
 <style>
-    
+   .about-mag{
+    margin-left: 1rem!important;
+    margin: 0;
+    padding: 0;
+   } 
 </style>

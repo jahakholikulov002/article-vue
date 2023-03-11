@@ -54,18 +54,19 @@ export default {
     margin: 0;
     padding: 0;
     font-size: 25px;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.347);
+    transition: all .5s ease;
     
 }
 .circle:hover, .circle:focus, .circle:active{
     
     box-shadow:0 0 20px rgba(255, 255, 255, 0.884);
-    -webkit-transform: scale(1.005);
-    transform: scale(1.005);
+    /* -webkit-transform: scale(1.001);
+    transform: scale(1.001); */
   }
 
 .socials .circle .fa-instagram {

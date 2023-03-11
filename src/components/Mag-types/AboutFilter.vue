@@ -1,53 +1,36 @@
-<template >
-    <div class="left-filter">
+<template>
+    <div class="filter">
         <div class="input">
             <input type="text" placeholder="Jurnal turini tanlang"> <i class="fa-solid fa-caret-left"></i>
 
         </div>
         <div class="category">
             <ul>
-                <li>Jurnal turi</li>
-                <li>Jurnal turi</li>
-                <li>Jurnal turi</li>
-                <li>Jurnal turi</li>
-                <li>Jurnal turi</li>
+                <li>So'ngi 10 kunlik jurnallar</li>
+                <li>So'ngi 1 oylik jurnallar</li>
+                <li>So'ngi eng ko'p o'qilgan jurnallar </li>
+               
             </ul>
         </div>
     </div>
 </template>
 <script>
-
 export default {
- name: "Filter",
-    
-    data() {
-        return {
-            // categories:[
-
-            // ]
-        }
-    },
+    name: 'AboutFilter'
 }
 </script>
-<style>
-.left-filter {
-    width: 400px;
-    /* height: 700px; */
-    /* background: #775353; */
+<style scoped>
+    .filter {
+   
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    margin-left: 1rem ;
-    height: 300px;
+    margin: 0 ;
+    padding: 2rem 0 1rem 3rem;
 
 }
 
 .input {
-    /* position: absolute; */
-
     margin-top: 30px;
-    width: 300px;
     height: 38px;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -56,7 +39,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* transition: all .2s ease; */
+    margin: 0;
 }
 
 .input:hover {
@@ -66,7 +49,6 @@ export default {
 
 
 .input input {
-    width: 250px;
     height: 32px;
     border: none;
     outline: none;
@@ -78,36 +60,35 @@ export default {
     margin-top: 10px;
     color: rgba(0, 0, 0, 0.63);
     transition: all .2s ease;
+    
 }
 
-.category {
-    
+.category {  
     margin-top: 10px;
     width: 300px;
-    
-    /* border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px; */
-    
+    margin: 10px 0;
 }
 .category ul{
     padding: 0;
-    position: relative;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 .category ul li{
-    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
     font-family: 'Roboto';
-    font-weight: 400;
+    font-weight: 500;
     list-style: none;
     padding: 10px;
-    width: 100%;
     background: #fff;
     box-shadow: 0 5px 25px rgba(0,0,0,.1);
     transition: transform .5s;
     cursor: pointer;
     height: 45px;
+    border-bottom: 1px solid #544a4aa5;
 }
 .category ul li:first-child{
     border-top-left-radius: 5px;
@@ -120,5 +101,4 @@ export default {
 .category ul li:hover{
     background:  #544a4aa5;
 }
-
 </style>
