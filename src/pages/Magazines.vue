@@ -1,7 +1,7 @@
 <template>
     <div class="main-content">
-        <Filter></Filter>
-        <Magazine :magazines="magazines"></Magazine>
+        <Filter/>
+        <Magazine :magazines="magazines"/>
 
     </div>
     <Pagination :current-page="currentPage" :page-count="pageCount" :page-range="pageRange" @page-changed="changePage" />

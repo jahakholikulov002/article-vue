@@ -1,6 +1,6 @@
 <template>
     <div class="mag-container">
-        <Box v-for="magazine in magazines" :magazine="magazine"></Box>
+        <Box v-for="magazine in magazines" :magazine="magazine"/>
     </div>
 </template>
 <script>
