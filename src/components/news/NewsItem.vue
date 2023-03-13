@@ -25,6 +25,8 @@ export default {
 }
 
 .box {
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
     /* width: 500px; */
     padding: 5px;

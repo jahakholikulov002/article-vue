@@ -1,6 +1,6 @@
 <template lang="">
     <div class="button">
-        <button> Barcha Jurnallar</button>
+        <button @click="$router.push('/magazines')"> Barcha Jurnallar</button>
     </div>
 </template>
 <script>

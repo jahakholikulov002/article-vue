@@ -5,7 +5,6 @@
     <NewsBox />
     <Add></Add>
     <Footer></Footer>
-
 </template>
 <script>
 import NewsBox from "@/components/news/NewsBox.vue"
@@ -17,11 +16,12 @@ export default {
         Add,
         Footer
     },
-   
+
 }
 </script>
 <style scoped>
 .section-1 {
+    margin-top: 5rem !important;
     margin: 0;
     padding: 0;
     background-image: url("@/assets/images/news.png");
@@ -45,5 +45,12 @@ span {
     letter-spacing: 5%;
     /* align-items: center; */
 
+}
+
+@media (max-width: 520px) {
+    span {
+        font-size: 30px;
+        text-align: center;
+    }
 }
 </style>

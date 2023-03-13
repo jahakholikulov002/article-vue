@@ -120,5 +120,19 @@ export default {
 .category ul li:hover{
     background:  #544a4aa5;
 }
+@media (max-width: 910px){
+    .category{
+        display: none;
+    }
+    .left-filter{
+        height: auto;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+}
+
 
 </style>

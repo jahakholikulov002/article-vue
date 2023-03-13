@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <h1>This is Login page!</h1>
     </div>
 </template>
@@ -8,6 +8,8 @@ export default {
     
 }
 </script>
-<style>
-    
+<style scoped>
+   .main{
+    margin-top: 5rem;
+   }
 </style>

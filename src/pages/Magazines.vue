@@ -39,10 +39,18 @@ export default {
 .main-content {
     display: flex;
     flex-direction: row;
+    margin-top: 5rem;
 
 }
 .footer{
     margin-top: 35px;
 }
+@media (max-width: 910px){
+  .main-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+ }
 
 </style>

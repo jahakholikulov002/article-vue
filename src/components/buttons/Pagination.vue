@@ -94,4 +94,11 @@
     background-color: #0F00B4;
     color: #fff;
   }
+  @media (max-width: 580px ){
+    li {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  }
   </style>

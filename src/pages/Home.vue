@@ -61,11 +61,19 @@ export default {
    position: relative;
    width: 100%;
    min-height: 100vh;
+   margin-top: 5rem;
  }
 
  .section {
    display: flex;
    flex-direction: row;
    justify-content: center;
+ }
+ @media (max-width: 910px){
+  .section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
  }
 </style>
