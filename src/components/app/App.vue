@@ -13,6 +13,11 @@ export default {
     Navbar,
 
   },
+  // methods:{
+  //  load(){
+  //   window.addEventListener('DOMContentLoaded',)
+  //  } 
+  // }
 
 
 }
@@ -22,5 +27,6 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* margin-top: 5rem!important; */
 }
 </style>

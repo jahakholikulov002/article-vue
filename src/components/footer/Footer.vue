@@ -104,4 +104,9 @@ p {
 
     opacity: 0.5;
 }
+@media (max-width:425px){
+    h6{
+        text-align: center;
+    }
+}
 </style>

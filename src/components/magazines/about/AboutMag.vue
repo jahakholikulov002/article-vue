@@ -16,8 +16,10 @@ export default {
 </script>
 <style>
    .about-mag{
-    margin-left: 1rem!important;
+    margin-right: 1rem!important;
     margin: 0;
     padding: 0;
-   } 
+    
+   }
+ 
 </style>

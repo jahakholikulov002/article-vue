@@ -23,7 +23,9 @@ export default {
 <style scoped>
 .search-bar {
   /* width: 100%; */
+  position: relative;
   height: 556px;
+  
   background-image: url(@/assets/images/map-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +52,7 @@ export default {
   display: flex;
   flex-direction: row;
   /* row-gap: ; */
-  width: 810px;
+  /* width: 810px; */
   height: 50px;
   display: flex;
   align-items: center;
@@ -79,6 +81,8 @@ export default {
 }
 
 input {
+  margin: 0;
+  padding: 0;
   width: 500px;
   border: none;
   outline: none;
@@ -137,4 +141,40 @@ i:hover {
   letter-spacing: 0.05em;
   color: #FFFFFF;
 
-}</style>
+}
+@media (max-width: 910px){
+  .form-input{
+    max-width: 500px;
+  }
+  input{
+    max-width: 400px;
+  }
+  i{
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 520px){
+  .form-input{
+    width: 300px ;
+    /* margin: 0 3rem; */
+    height: 40px;
+  }
+  i{
+    font-size: 18px;
+  }
+  .title{
+    font-weight: 600;
+  font-size: 37px;
+  line-height: 59px;
+  }
+  .content-text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 20px;}
+  }
+
+</style>

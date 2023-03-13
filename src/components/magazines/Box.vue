@@ -155,4 +155,61 @@ span {
 .info .more span:hover {
     font-weight: 500;
 }
-</style>
+
+@media (max-width: 580px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info .title {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 29px;
+
+    }
+
+    .info .desctiption {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18.5px;
+    }
+
+    .info .type {
+        margin-top: 1rem;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .info .download {
+        margin-top: 5px!important;
+
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    }
+    .info .more {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03rem;}
+    img {
+        height: 200px;
+
+    }
+}
+
+@media (max-width: 425px) {
+    img {
+        display: none;
+    }
+
+}</style>

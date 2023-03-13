@@ -8,25 +8,6 @@
 
         </div>
     </div>
-    <div class="box">
-        <img src="@/assets/images/author2.png" alt="">
-        <div class="content">
-            <h4>Jon Grishem</h4>
-            <p>Jon Grishem
-                Oddiy yozuv stategiyasi Jon <br> Grishemga
-                muvaffaqiyyatga erishishda yordam....</p>
-
-        </div>
-    </div>
-    <div class="box">
-        <img src="@/assets/images/author3.png" alt="">
-        <div class="content">
-            <h4>Майкл Вульф и его <br> «Тысяча дорог в Мекку»
-               </h4>
-            <p> Майкл Вульф родился 3 апреля 1945 г. <br> в американском городе...</p>
-
-        </div>
-    </div>
 </template>
 <script>
 export default {
@@ -43,14 +24,22 @@ export default {
 .box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    /* width: 400px; */
+    border: 1.45406px solid rgba(148, 148, 148, 0.5);
+    cursor: pointer;
+    border-radius: 4px;
 
-    margin: 0 0 1rem 1rem;
-    padding: 0;
-    width: 500px;
+}
+.box:hover{
+    box-shadow: 0 0 20px rgba(69, 68, 68, 0.347);
 }
 
 img {
-    width: 376px;
+    width: 346px;
 }
 
 h4 {
@@ -73,5 +62,10 @@ p {
     letter-spacing: 0.05em;
 
     color: #949494;
+}
+@media (max-width: 410px){
+img{
+    width: 300px;
+}
 }
 </style>

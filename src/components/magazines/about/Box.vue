@@ -68,7 +68,7 @@ export default {
 </script>
 <style scoped>
 .box {
-    margin: 28px  0 22px 0 ;
+    margin: 1.5rem;
     padding: 0;
     display: flex;
     /* width: 100%; */
@@ -92,7 +92,7 @@ img {
 .content {
     display: flex;
     flex-direction: column;
-    margin-right: 2rem!important;
+    margin-right: 2rem !important;
     margin: 0;
     padding: 0;
 
@@ -119,11 +119,11 @@ img {
 }
 
 .content .inner-content .mar15 {
-    margin-left: 184px !important;
+    /* margin-left: 184px !important; */
 }
 
 .content .inner-content .mar10 {
-    margin-left: 3.4rem !important;
+    /* margin-left: 2rem !important; */
 }
 
 .inner-content .row {
@@ -266,4 +266,60 @@ i {
     margin: 0;
     padding: 0;
 
+}
+
+@media (max-width: 760px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        height: 250px;
+        width: 200px;
+    }
+    .download span{
+        margin-bottom: 1.5rem;
+    }
+
+
+
+}
+
+@media (max-width: 520px) {
+    .content {
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    img {
+        display: none;
+    }
+
+    .inner-row {
+        margin-left: 1rem;
+    }
+
+    .inner-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mar15 {
+        margin: 1rem;
+    }
+
+    .row2 {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    .inner-content .row {
+        margin: 0 1rem 1rem 1rem !important;
+        /* padding: 0 !important; */
+    }
 }</style>

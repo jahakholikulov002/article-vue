@@ -4,11 +4,11 @@
         <span>haqida umumiy ma'lumot</span>
     </div>
     <div class="container">
-        <AboutMag />
         <div class="section">
-        <AboutFilter/>
-        <Author></Author>
-    </div>
+            <AboutFilter />
+            <Author></Author>
+        </div>
+        <AboutMag />
     </div>
     <div class="pagination">
 
@@ -49,6 +49,7 @@ export default {
 </script>
 <style scoped>
 .section-1 {
+    margin-top: 5rem!important;
     margin: 0;
     padding: 0;
     background-image: url("@/assets/images/books.png");
@@ -60,7 +61,8 @@ export default {
     align-items: center;
     height: 219px;
 }
-.section{
+
+.section {
     margin: 0;
     padding: 0;
     /* align-items: center; */
@@ -87,7 +89,22 @@ span {
     justify-content: center;
 
 }
-.pagination{
+
+.pagination {
     margin: 2rem 0;
+}
+@media (max-width: 1230px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 520px){
+    span{
+        font-size: 30px;
+        text-align: center;
+    }
 }
 </style>
